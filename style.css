@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root{
+  --dark-gray: #161616;
+  --medium-gray:#212121;
+  --gray: #828282;
+  --white: #fff;
+  --blue: #0A79C0;
+}
+
+a{
+  color: var(--white);
+}
+
+body{
+  background-color: var(--dark-gray);
+  color: var(--white);
+  font-family: "DM Sans", sans-serif;
+  width: 100vw;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+}
+
+.container{
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.flex{
+  flex-direction: row;
+}
+
+header img{
+  width: 100px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ilustracao{
+  width: 350px;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1{
+  font-size: 45px;
+}
+p{
+  color: var(--gray);
+}
+
+.buttons{
+  display: flex;
+  gap: 20px;
+}
+button{
+  background-color: var(--dark-gray);
+  border: 1px solid var(--gray);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+
+.buttons :first-child{
+  background-color: var(--blue);
+  color: var(--dark-gray);
+  border: var(--blue);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+}
+
+.contact .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  font-size: 30px;
+  color: var(--blue);
+  background-color: var(--medium-gray);
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 30px;
+}
+
+.projects img{
+  width: 100%;
+  border-radius: 10px;
+} 
+
+.project{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--medium-gray);
+  padding: 20px;
+  border-radius: 20px;
+}
